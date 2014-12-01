@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource
+        name="jdbc/db" type="javax.sql.DataSource"
+        maxActive="1000" maxIdle="300" maxWait="1000"
+        url="jdbc:mysql://localhost:33306/khecha_djamah"  				  
+        driverClassName="com.mysql.jdbc.Driver"
+        username="khecha_djamah" password="khecha_djamah"
+        factory="org.apache.commons.dbcp.BasicDataSourceFactory" 
+    />
+</Context>
+
+

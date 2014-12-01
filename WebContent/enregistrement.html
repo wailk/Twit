@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Page d'enregistrement</title>
+		
+		<link rel="stylesheet" title="kit" media="screen" type="text/css" href="./ressources/site/css/enregistrement.css" />
+		
+		<style>body{background:url(./ressources/site/images/bg21.png);margin: 0;background-repeat:no-repeat;background-size: 1920px 1200px;}.footer{margin-top:100px;text-align:center;color:#666;font:bold 14px Arial}.footer a{color:#999;text-decoration:none}.main{margin: 200px auto;</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/lib.main.js"></script>
+		<script type="text/javascript" src="scripts/lib.connexion.js"></script>
+		<script type="text/javascript" src="scripts/lib.inscription.js"></script>
+		<title>Enregistrement</title>
+	</head>
+
+	<body>
+
+		<div id="logo">
+					<a href="index.jsp"><img src="./ressources/site/images/Pheonix.png" alt="Logo" /></a>
+					
+				</div>
+				
+				<div id="nomdusite">
+					<h1><font color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PseudoTwitter</font></h1>
+				</div>
+				
+		<div class="main">
+		
+			<h1>Enregistrement</h1>
+			
+				<form class="contenu" action="javascript:(function(){return;})()" method="post" onSubmit="javascript:inscription(this);">
+				
+					<div id="formulaire">
+					
+						<div class="nom" >
+							<input type="text" name="prenom" placeholder="First Name" color="black" required/>
+							<input type="text" name="nom" placeholder="Name" required/>
+						</div>
+					
+							<div class="ids">
+								<input type="text" name="login" placeholder="Login" required/>
+							</div>
+							
+							<div class="ids">
+								<input type="password" name="mdp" placeholder="Password" required/>
+							</div>
+							
+							<div class="ids">
+								<input type="password" name="mdp2" placeholder="Password" required/>
+							</div>
+						
+						<div class="buttons">
+							<input type="submit" value="Enregistrer" />
+							<input type="button" value="Annuler" onClick="window.location.href='index.jsp'" />
+						</div>
+					</div>
+	
+				</form>
+		</div>
+	</body>
+</html>

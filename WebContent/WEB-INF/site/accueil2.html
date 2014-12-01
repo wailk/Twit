@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" title="kit" media="screen" type="text/css" href="style/accueil2.css" />
+		<script type="text/javascript" src="script/environnement.js"></script>
+		<script type="text/javascript" src="script/jquery.js"></script>
+		<title>Page principale</title>
+		<meta name="robots" content="noindex,follow" />
+		<style>body{background:url(images/bg.png);margin: 0 auto;}</style>
+
+	</head>
+	
+	<body onLoad="javascript:main()"> <!--onload sert a declencher une fonction quand toute la page est chargee pour ne pas manipuler des données inexistantes-->
+	<!--<body>
+		<script type="text/javascript" src="script/environnement.js">$(main);</script>-->
+		<!--<script type="text/javascript">
+		environnement =[];
+		<% 
+		String id = request.getParameter("id"); <!--là on écrit du java entre les %
+		String login = request.getParameter("login");
+		String key = request.getParameter("key");
+		if ((id!=null)&&(login!=null)&(key!=null)){
+			out.println("environnement.actif = new User("+id+","+login+")");
+			out.println("environnement.key = "+key);
+			}
+		%>
+		</script>-->
+		<div id="header">
+		
+				<div id="logo">
+					<a href="accueil2.html"><img src="images/logo.png" alt="Logo" /></a>
+					<h1>PseudoTwitter</h1>
+				</div>
+				
+				<div id="liens">
+					<span>
+						<a href='connexion.html'>Connexion</a> / 
+						<a href='enregistrement.html'> Enregistrement </a>
+					</s	pan>
+				</div>
+		</div>
+		<div id="page">
+			<div id="stat">
+				<span >
+					<I>Zone pour la publicite</I>
+
+				</span>
+			</div>
+			
+			<div id="content">
+				<div id="ajouter_comment">
+					<I>Ajouter un commentaire:</I>
+					<form name="new_comment" id="new_comment" action="javascript:func_new_comment(this)">
+				
+						<textarea id="commentaire" placeholder="Ecrivez votre commentaire"></textarea>
+						<br/>
+						<input type="submit" value="Poster" id="new_button" />
+					</form>
+				</div>
+				
+				<div id="comment">
+					<h3>Commentaires:</h3>
+					<div class="infos_comment">
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+	
+</html>

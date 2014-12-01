@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MessageBoard</title>
+    <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <link href="res/style.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="res/moment.js"></script>
+    <script src="res/app.js"></script>
+    <script src="res/validation.js"></script>
+    
+	<script>
+	var user;
+	var key;
+	var user_id;
+	
+	$(document).ready(function(){
+			
+			$("#postmessage").click(function(){
+			    	var message = $("#tweet").val();
+			    	addMessage(window.user,window.user_id,message);
+			    });
+			
+		   $("#wrapper").hide();
+           $("#register").hide();
+           $(".username").html(document.user);
+			
+	    
+	});
+	</script>
+
+</head>
+<body>
+
+<div id="login" class="login">
+	
+		<h2>Connectez-vous</h2>
+
+		<form class="contenu" action="javascript:(function(){return;})()" onSubmit="javascript:isValidLogin(this);">
+
+			<div id="formulaire">
+				<input class="textinput" type="text" name="username" placeholder="Username" required/> <br />
+				<input class="textinput" type="password" name="password" placeholder="Password" required/> <br />
+				<input class="button" type="submit" value="Connexion" /> 
+				<input class="button" type="button" value="Inscription" onClick="show_register();" />
+			</div>
+
+		</form>
+
+</div>
+
+<div id="register" class="login">
+
+    <h2>Inscrivez-vous</h2>
+
+    <form class="contenu" action="javascript:(function(){return;})()" onSubmit="javascript:register(this);">
+
+        <div id="formulaire">
+        	<input class="textinput" type="text" name="name" placeholder="Prenom" required/> <br />
+        	<input class="textinput" type="text" name="surname" placeholder="Nom" required/> <br />
+            <input class="textinput" type="text" name="username" placeholder="Username" required/> <br />
+            <input class="textinput" type="password" name="password" placeholder="Password" required/> <br />
+            <input class="textinput" type="email" name="email" placeholder="Email" required/> <br />
+            <input class="button" type="submit" value="Envoyer" />
+            <input class="button" type="button" value="Connexion" onClick="show_login();" />
+        </div>
+
+    </form>
+
+</div>
+
+<div id="wrapper">
+    <div id="logo">
+        <div id="search">
+            <form action="">
+                <input type="text"/>
+                <button>Rechercher</button>
+            </form>
+        </div>
+        <ul>
+            <li>Bonjour <a id="current_user" href="login.html"></a>! </li>
+            <li><a href="index.html">Deconnexion</a></li>
+        </ul>
+        <h1>MessageBoard</h1>
+    </div>
+    <div id="content">
+        <div id="forms">
+            <form action="javascript:(function(){return;})()">
+                <textarea id="tweet" type="number" placeholder="Votre message ici..." maxlength="100"></textarea>
+                <button id="postmessage">Post Message</button>
+            </form>
+        </div>
+        
+        <div id="toolbar">
+        <h2>Amis:</h2>
+        
+        <h2>Ajouter:</h2>
+        
+        </div>
+        
+        <div id="messages">
+
+
+            <span class="message">
+                <span class="username"></span>
+                <span class="date">10 days ago</span>
+                <span class="text">Bonjour, Ceci est votre tweet par defaut... Mettez à jour votre status!</span>
+            </span>
+
+
+        </div>
+        
+        <div id="footer"></div>
+    </div>
+
+
+
+</div>
+<script>
+    jQuery(function ($) {
+        $('form').validatr();
+    });
+</script>
+</body>
+</html>

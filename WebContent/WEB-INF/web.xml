@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<servlet>
+		<servlet-name>SumServlet</servlet-name>
+		<servlet-class>servlet.SumServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SumServlet</servlet-name>
+		<url-pattern>/sum</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CreateUserServlet</servlet-name>
+		<servlet-class>servlet.CreateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateUserServlet</servlet-name>
+		<url-pattern>/CreateUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>testServlet</servlet-name>
+		<servlet-class>servlet.testServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>testServlet</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddFriendServlet</servlet-name>
+		<servlet-class>servlet.AddFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddFriendServlet</servlet-name>
+		<url-pattern>/AddFriend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RemoveFriendServlet</servlet-name>
+		<servlet-class>servlet.RemoveFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveFriendServlet</servlet-name>
+		<url-pattern>/RemoveFriend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<servlet-class>servlet.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<url-pattern>/DeleteUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddCommentServlet</servlet-name>
+		<servlet-class>servlet.AddCommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCommentServlet</servlet-name>
+		<url-pattern>/AddComment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchCommentServlet</servlet-name>
+		<servlet-class>servlet.SearchCommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchCommentServlet</servlet-name>
+		<url-pattern>/SearchComment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListMsgServlet</servlet-name>
+		<servlet-class>servlet.ListMsgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListMsgServlet</servlet-name>
+		<url-pattern>/ListMessages</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LikeCommentServlet</servlet-name>
+		<servlet-class>servlet.LikeCommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LikeCommentServlet</servlet-name>
+		<url-pattern>/LikeComment</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>

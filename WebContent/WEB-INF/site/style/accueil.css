@@ -1,0 +1,198 @@
+
+body
+{
+	background:#028E9B;
+	margin:0px;
+    padding:0px;
+    font-family:Verdana, sans-serif;;
+}
+h1
+{
+	color:rgb(13,183,255);
+	font-size: 50px;
+}
+h2
+{
+	color:rgb(13,183,255);
+	font-weight:bold;
+}
+header
+{
+    background:#17C;
+    height: 50px;
+    margin-top:20px;
+}
+
+.conn
+{
+	border-radius:25px;
+	background: #fff;
+	border: 2px #17C solid;
+	text-align:center;
+	margin-left: 20%;
+	margin-top: 100px;
+	width:25%;
+	height:35%;
+	padding:20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.inscr
+{
+	border-radius:25px;
+	background: #fff;
+	border: 2px #17C solid;
+	text-align:center;
+	margin-left: 5%;
+	margin-top: 100px;
+	margin-bottom: 3%;
+	width:25%;
+	height:35%;
+	padding:20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.menu
+{
+	border-radius:25px;
+	background: #fff;
+	border: 2px #17C solid;
+	margin-left: 15%;
+	margin-top: 20px;
+	text-align:center;
+	width:25%;
+	padding:20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.liste_tweet
+{
+	border-radius:25px;
+	background: #fff;
+	border: 2px #17C solid;
+	text-align:center;
+	margin-left: 45%;
+	margin-top: -518px;
+	width:30%;
+	padding:20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.profil
+{
+	border-radius:25px;
+	background: #fff;
+	border: 2px #17C solid;
+	margin-left: 15%;
+	margin-top: 50px;
+	text-align:center;
+	width:60%;
+	width:60%;
+	padding:20px;
+}
+
+
+.inscription
+{
+	border-radius:25px;
+	background: #fff;
+	border: 2px #17C solid;
+	text-align:center;
+	margin-left: 25%;
+	margin-top: 10%;
+	width:50%;
+	padding:20px;
+	margin-bottom:5%;
+}
+.tweet
+{
+	background: #aff;
+	border: 2px #17C solid;
+	text-align:left;
+	border-radius:10px;
+	padding-right:5px;
+	padding-bottom:5px;
+}
+
+footer a
+{
+	color: #fff;
+}
+
+footer
+{
+	background: #17C;
+    color: #fff;
+	text-align:center;
+	/*margin-top: 40px;*/
+	/*margin-bottom: 20px;*/
+	margin-bottom:10px;
+}
+.sign
+{
+	font-size:70%;
+}
+
+header img
+{
+	width:50px;
+	position: absolute;
+	right: 30px;
+	top: 22px;
+}
+
+.profil
+{
+	text-align:left;
+}
+
+.profil form
+{
+	text-align:right;
+}
+
+.image
+{
+	width:150px;
+	display: inline-block;
+	vertical-align: top;
+	border: 2px #17C solid;
+}
+.infos
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+section
+{
+	margin-bottom:20px;
+}
+
+fieldset
+{
+	border-radius:45px;
+	background: #aff;
+}
+
+:focus
+{
+    border: 2px #17C solid;
+}
+
+.imagetwitt
+{
+	width:45px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius:10px;
+}
+
+.boutton
+{
+	border-radius:20px;
+} 

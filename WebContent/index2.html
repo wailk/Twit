@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajax({
+    	
+    	url:"ListMessages",
+    	type:'GET',
+    	data:{login : sam},
+    	dataType:'json',
+    	success:function(result){
+    		
+    		
+    		alert(result.messages[0].message);
+    		$("#div1").html(afficheMessages(result.messages));
+    		
+    		
+      				},
+        error:function(a1,a2){alert(a1);alert(a2);}
+    
+    
+    });
+  });
+});
+
+
+function afficheMessages(comments){
+	var out = "<ul> \n";
+	for(var i = 0; i < comments.length; i++){
+		out += "<li>" + comments[i].message + "</li>\n";
+	}
+	out += "</ul>"
+	return out;
+}
+
+
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Messages:</h2></div>
+<button>Afficher</button>
+
+</body>
+</html>

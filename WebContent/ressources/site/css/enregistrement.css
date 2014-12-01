@@ -1,0 +1,164 @@
+
+.main,
+.main h1,
+.main input{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+#logo{
+	display: block;
+	vertical-align: top;
+	width: 20%;
+	height: 15%;
+	margin-left: 4%;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+
+#logo img{
+	margin-top: 5px;
+	border: 0;
+	width: 150px;
+	height: 150px;
+	
+}
+
+/* Form Container */
+.main {
+	position: relative;
+	width: 490px;
+	height: 290px;
+	padding: 20px 25px 0 25px;
+	margin-top: 15px;
+	cursor: default;
+
+	background-color: #141517;
+
+	border-radius: 5px;
+
+	box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+}
+
+.main:before {
+	position: absolute;
+	top: -12px;
+	left: 10px;
+
+	width: 0px;
+	height: 0px;
+	content: '';
+	
+	border-bottom: 10px solid #141517;
+	border-right: 10px solid #141517;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+}
+
+/* Form Title */
+.main	h1 {
+	line-height: 40px;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	color: #e4e4e4;
+}
+
+/* Form Input General Styles */
+.main input {
+	line-height: 14px;
+	margin: 10px 0;
+	padding: 6px 15px;
+	border: 0;
+	outline: none;
+
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+
+	border-radius: 26px;
+
+}
+
+/* Form Name & First Name Input Styles */
+.nom input{
+	color: #686868;
+	width: 240px;
+
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+
+	background: #989898;
+}
+
+.nom input:hover {
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+}
+
+.nom input:focus {
+	background: #e1e1e1;
+}
+
+/* Form Login & Password Input Styles */
+.ids input {
+	color: #686868;
+	width: 334px;
+	
+	margin-left: 16%;
+	margin-right: 16%;
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+
+	background: #989898;
+}
+
+.ids input:hover {
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+}
+
+.ids input:focus {
+	background: #e1e1e1;
+}
+
+/* Form Submit & Button Input Styles */
+.buttons input[type=button] {
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+
+	color: #445b0f;
+
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+.buttons input[type=submit] {
+	cursor: pointer;
+
+	color: #445b0f;
+
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+.buttons input:hover {
+	box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+}
+
+.buttons input:active {
+	box-shadow: none;
+}
+
+/* Form Green Gradient Styles */
+.buttons input{
+	background: #a5cd4e;
+}
+
+/*Form message erreur */
+
+#erreur{
+	line-height: 20px;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #a5ca3e;
+	}

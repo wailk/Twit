@@ -1,0 +1,156 @@
+body {
+    margin:auto;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10.5pt; 	
+    background: url("bg.jpg") repeat-x #ffffff right top;
+}
+#wrapper{
+    margin: 0 auto;
+    width: 900px;
+}
+
+.login {
+    width: 400px;
+    margin: auto;
+    margin-top:10%;
+    margin-bottom:10%;
+    background: white;
+    border-radius:10px;
+    padding: 25px 15px;
+    
+}
+
+.login h2 {
+	font-size: 16pt;
+	font-style: italic;
+	margin: 10px;
+	margin-top:0;
+	
+}
+
+
+.login .textinput {
+	width: 90%;
+	font-size: 15pt;
+	padding: 10px;
+}
+
+.login .button {
+	font-size: 13pt;
+	padding: 10px;
+	border: 1px solid #cccccc;
+}
+
+
+#logo {
+    height: 140px;
+}
+
+#logo ul {float: right;}
+
+#logo li {
+
+    display: inline;
+
+}
+#logo li a { color: #ffffff; }
+#logo h1 {
+
+    font-family: 'Denk One', sans-serif;
+    margin: 30px 0;
+    font-size: 35pt;
+
+}
+
+#forms {
+    background: rgba(28, 25, 28, 0.70);
+    padding: 10px;
+    border-radius:5px;
+
+
+}
+#forms form {width: 600px;}
+#forms form textarea {
+    width: 475px;
+    height: 70px;
+    resize:none;
+    background: #ccc;
+
+}
+
+#forms form button {
+    background: #ccc;
+    border: 0;
+    padding: 10px;
+    float: right;
+
+}
+
+#content {
+
+}
+
+#toolbar {
+	float: right;
+    width: 250px;
+	
+}
+
+#messages {
+    background:#06b6ff;
+    padding: 10px;
+    width: 600px;
+    min-height: 300px;
+
+}
+#messages .message {
+    display: block;
+    margin-bottom: 10px;
+
+    padding: 5px 15px;
+    background: #d2ebf0;
+    border:1px solid #79b1f0;
+    border-radius:5px;
+    padding-bottom: 20px;
+
+}
+
+#messages .message:hover {
+    background: #f0f0ea;
+}
+
+#messages .message .username {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: 900;
+    color: #3b53a2;
+
+}
+
+#messages .message .text {
+    margin-left: 5px;
+    border-left: 2px solid #ffffff;
+    padding-left: 5px;
+    display: block;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 14pt;
+
+
+}
+
+#messages .message .like {
+	display:block;
+	float: right;
+}
+
+#messages .message .date {
+    float: right;
+}
+
+
+#footer{
+    clear: both;
+	margin-top: 20px;
+	min-height: 50px;
+
+}
